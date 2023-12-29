@@ -1,0 +1,285 @@
+@media screen and (max-width: 1550px) {
+    nav{
+      min-height: 110em;
+     
+    }
+
+   
+
+
+    body{
+      font-family: var(--font1);
+    
+      grid-template-columns: 1fr;
+      background-color: #E2E8F0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    
+    header{
+      width: 100%;
+  
+    }
+
+    input{
+      max-width: auto;
+      display: grid;
+      grid-column: 2 /3;
+    }
+
+    .font1{
+     
+      margin-left: 5px;
+    }
+
+    .font2{
+      display: none;
+    }
+
+    .linha1{
+      grid-template-columns: 1fr minmax(100px, 700px);
+    }
+
+    .linha1 > img{
+      display: none;
+    }
+
+    .linha1 > h4{
+      display: none;
+    }
+
+    .linha2 > .btn{
+      grid-column: 3 / 6;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
+    }
+
+    .linha2 > .btn > button{
+      border-radius: 10px;
+   
+      
+      background-color: #1992D4;
+      color: white;
+      font-weight: 900;
+    
+    }
+
+    main{
+      grid-template-rows:  repeat(auto-fit, 1fr);
+      text-align: center;
+    
+      display: grid;
+      background-color: #E2E8F0;
+      box-shadow: none;
+      justify-content: space-between;
+    }
+
+    main > h3 {
+     grid-column: 1;
+     grid-row: 2;
+      margin-bottom: 1em;
+    }
+    article{
+      
+    }
+
+    .art{
+     
+      grid-column: 1 / 4;
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      gap: 20px;
+      grid-row: 2 /15;
+     
+    }
+
+   
+    .lateral{
+      display: grid;
+      grid-column: 1 / 4;
+      grid-row:  14 / 16;
+      column-gap: 2em;
+      text-align: start;
+    
+      grid-template-columns: 1fr ;
+    }
+
+   section {
+     
+      display: grid;
+     
+    
+    
+      gap: 5em;
+   
+      background-color: white;
+     
+      margin: 0;
+      height: 115%;
+      grid-template-rows: repeat(3, 100px);
+      border-radius: 20px;
+      row-gap: 2em;
+    }
+
+    .lateral > h3 {
+        margin-top: 4em;
+    }
+
+    aside{
+      grid-row: 2 / 4;
+      grid-column: 3/15;
+      min-height: 60vh;
+    }
+
+    .tit{
+      grid-row: 1;
+      grid-column: 3 /15;
+      margin-top: 4em;
+    }
+  
+}
+
+@media screen and (max-width: 1180px){
+  nav{
+    max-width: auto;
+    position:fixed;
+  }
+
+  .disabled{
+    display: none;
+  }
+
+  .btnClick{
+    display: block;
+    position:fixed;
+    background-color: #1992D4;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+ .color{
+  color: white;
+ }
+
+  
+ 
+
+  header{
+    grid-column: 1 /6;
+  }
+
+
+
+  .linha2 > .btn{
+    grid-column: 3 / 5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  
+  }
+
+  .art{
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr) );
+    grid-row: 3 /15 ;
+  }
+
+  main{
+   
+  }
+
+  main > h3 {
+    grid-column: 2;
+    grid-row: 2;
+     margin-bottom: 1em;
+   }
+
+   .lateral{
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 15 /16;
+   
+  }
+ 
+  
+
+  aside{
+    margin-right: 1em;
+    min-height: 55vh;
+  }
+}
+
+@media screen and (max-width: 965px){
+  .art{
+    grid-row: 3/25 ;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+  }
+  .lateral{
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 25/ 26;
+  }
+
+
+ 
+}
+
+@media screen and (max-width: 860px){
+  body{
+    display: block;
+  }
+
+  main > h3{
+    margin-bottom: -.1px;
+  
+    margin-top: 2em;
+    font-size: 1.7em;
+    text-align: center;
+  }
+
+  
+
+ 
+
+
+  .art{
+    display: inline-grid;
+   
+    max-width: 75%;
+    margin-left: 1em;
+  }
+
+  .lateral{
+    display: block;
+    max-height: 22em;
+    max-width: min-content;
+
+    margin-left: 3em;
+  }
+
+  .lateral > h3{
+    text-align: center;
+  }
+
+  .tit{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 775px){
+  main > h3{
+    text-align: center;
+ 
+  }
+
+  
+  .linha2 > .btn{
+    grid-column: 3 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  
+  }
+
+ input{
+  max-width: 70%;
+ }
+}
